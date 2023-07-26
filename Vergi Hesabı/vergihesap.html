@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vergi Hesaplama</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- SEO -->
+    <meta name="author" content="Didem Çetin" />
+    <meta name="description" content="for one page" />
+    <meta name="keyword" content="Vergi Hesabı, Kdv" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./vergihesaplama.css" />
+
+    <!-- GoogleFont -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header start -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 offset-3 display-4">
+            <h1 id="baslik_id">Vergi Hesaplama</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main Start -->
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 offset-3">
+            <div id="main_id1">
+              <h4>Vergi oranını seçiniz...</h4>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic radio toggle button group"
+                style="display: flex;"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="vergi_1"
+                  autocomplete="off"
+                  checked
+                  
+                />
+                <label class="btn btn-outline-warning" for="vergi_1"
+                  >%1</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="vergi_8"
+                  autocomplete="off"
+                 
+                />
+                <label class="btn btn-outline-warning" for="vergi_8"
+                  >%8</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="vergi_18"
+                  autocomplete="off"
+                  
+                />
+                <label class="btn btn-outline-warning" for="vergi_18"
+                  >%18</label
+                >
+
+                <input type="radio" class="btn-check" autocomplete="off" />
+                <label class="btn btn-outline-warning">Yüzde gir</label>
+              </div>
+            </div>
+
+            <div class="row mt-4" id="main_id2">
+
+              <div class="col-3">
+                <h4 class="ms-1">Vergi Oranı</h4>
+              </div>
+              <div class="col-9">
+                <input id="vergiorani_id" class="form-control text-end" type="number" placeholder="0₺" />
+              </div>
+              <div class="col-3 mt-3">
+                <h4 class="text-end">Tutar</h4>
+              </div>
+              <div class="col-9 mt-3">
+                <input id="tutar_id" class="form-control text-end" type="number" placeholder="0₺" />
+              </div>
+
+            </div>
+
+            <div class="row mt-4" id="main_id3">
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="vergidahil_id" autocomplete="off" checked>
+                <label class="btn btn-outline-success" for="vergidahil_id">Vergi Dahil</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="vergihariç_id" autocomplete="off">
+                <label class="btn btn-outline-success" for="vergihariç_id">Vergi Hariç</label>
+              
+                
+              </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+    </main>
+      <!-- Main End -->
+
+      <!-- Footer Start -->
+    <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 offset-3 mt-4">
+          <div class="row" id="footer_id">
+
+            <div class="col-6">
+              <h4>Ara Toplam : </h4>
+            </div>
+            <div class="col-6" >
+             <h4 class="text-end" id="aratoplam_id">0₺</h4>
+            </div>
+
+            <div class="col-6 mt-3">
+              <h4 >Vergi : </h4>
+            </div>
+            <div class="col-6 mt-3">
+              <h4 class="text-end" id="vergi_id">0₺</h4>
+            </div>
+
+            <div class="col-6 mt-3">
+              <h4>Genel Toplam : </h4>
+            </div>
+            <div class="col-6 mt-3">
+              <h4 class="text-end" id="geneltoplam_id">0₺</h4>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </footer>
+         <!-- Footer End -->
+     <!-- jquery -->
+     <script
+     src="https://code.jquery.com/jquery-3.7.0.min.js"
+     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+     crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- external css -->
+
+    <script src="./vergihesap.js"></script>
+  </body>
+</html>

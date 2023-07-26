@@ -1,0 +1,46 @@
+/* 
+
+Project : Vergi Hesaplama
+Author  : Didem Çetin
+Date    : 26 / 07 /2023
+Version : v.1
+
+*/
+
+/*#########################################*/
+html {
+    font-size: 13px;
+  
+  }
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2;
+    position: relative;
+    background-color: rgb(250, 243, 240)
+
+  }
+
+
+#baslik_id{
+text-align: center;
+background-color: rgb(219, 196, 240);
+color:white;
+margin-bottom: 2rem;
+text-shadow: 0.4px -0.9px rgba(11, 11, 14, 0.9);
+padding: 1.5rem;
+border-radius: 0.5rem;
+ 
+}
+
+#footer_id{
+  background-color:rgb(165, 229, 165);
+  padding: 2rem;
+  color:white;
+  border-radius: 0.5rem;
+}
+
+#main_id2{
+  background-color: rgb(255, 202, 204);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
